@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4"
   }
 }
