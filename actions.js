@@ -10,9 +10,7 @@ function addComment(text) {
     return {
         type: ADD_COMMENT,
         text,
-        id: uuid.v4(),
-        thumbs_up: 0,
-        thumbs_down: 0
+        id: uuid.v4()
     }
 };
  function editComment(text,id) {
@@ -33,16 +31,15 @@ function addComment(text) {
 function thumbDownComment (id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id,
-        thumbs_down: thumbs_down - 1
+        id
+        
     }
 };
 
 function thumbUpComment (id) {
     return {
         type: THUMB_UP_COMMENT,
-        id,
-        thumbs_up: thumbs_up + 1
+        id
     }
 }
 
